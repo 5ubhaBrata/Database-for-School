@@ -1,0 +1,51 @@
+mysql> select distinct name from Faculty natural join teaches natural join Course where dept_name='Stat';
++----------------+
+| name           |
++----------------+
+| Birendra L.    |
+| Chirag S.      |
+| Sreejesh P. R. |
+| Lovelina B.    |
++----------------+
+4 rows in set (0.00 sec)
+
+
+mysql> select * from Student where GPA>7;
++------+------------+------+
+| ID   | Name       | GPA  |
++------+------------+------+
+| S202 | Pooja R.   | 7.30 |
+| S205 | Nisha W.   | 7.50 |
+| S208 | Subrata M. | 8.00 |
+| S209 | Anshu K.   | 7.60 |
+| S211 | Ravi K.    | 7.40 |
+| S213 | Atanu D.   | 7.10 |
+| S219 | Sudip D.   | 7.10 |
++------+------------+------+
+7 rows in set (0.00 sec)
+
+
+mysql> select * from Course where dept_name='Stat';
++----------+------------+-----------+---------+------------+----------+------+
+| CourseID | CourseName | dept_name | credits | RoomNumber | Building | Half |
++----------+------------+-----------+---------+------------+----------+------+
+| S001     | SI         | Stat      |       4 |        101 | ABC      | 1st  |
+| S002     | LMRA       | Stat      |       4 |        101 | ABC      | 2nd  |
+| S003     | MTP        | Stat      |       4 |        102 | ABC      | 2nd  |
+| S004     | R          | Stat      |       4 |        102 | ABC      | 1st  |
++----------+------------+-----------+---------+------------+----------+------+
+4 rows in set (0.00 sec)
+
+
+
+mysql> select name,post,salary from Faculty where Salary>45000;
++----------------+-----------+--------+
+| name           | post      | salary |
++----------------+-----------+--------+
+| Amit P.        | Dean      | 57000  |
+| Lovelina B.    | Professor | 55000  |
+| Hardik S.      | Professor | 45500  |
+| Sreejesh P. R. | Professor | 50000  |
+| Saurabh C.     | Professor | 48000  |
++----------------+-----------+--------+
+5 rows in set (0.00 sec)
