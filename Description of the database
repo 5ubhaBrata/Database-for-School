@@ -1,0 +1,6 @@
+A school has several departments runs in several buildings. Each building has a uniqe
+name. Each department has a unique name and its budget. Each department offers several
+courses. Each course has its id, name and some credits associated with it. Every persons
+in the school have a id, name and phone number. Every faculty has their post,date of
+joining, salary. The Students have grade point averages. Buildings have some classrooms.
+Each classroom has a room number and capacity.
